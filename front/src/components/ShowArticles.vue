@@ -38,7 +38,6 @@ export default {
       this.articles = data.articles
     },
     submit(article) {
-      console.log('submit:', article)
       this.$router.push({
         name: `article`,
         params: {
