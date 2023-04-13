@@ -12,6 +12,7 @@ export class ArticlesController {
 
   @Get(':text')
   findOne(@Param('text') text: string) {
+    console.log('text:', text);
     return this.articlesService.find(text);
   }
 }
