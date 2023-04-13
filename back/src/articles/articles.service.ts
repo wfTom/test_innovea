@@ -5,7 +5,6 @@ import newsapi from 'src/utils/api';
 export class ArticlesService {
   async find(text = 'keyword') {
     try {
-      console.log('pesquisar:', text);
       const url = `everything?q=${text}&apiKey=${process.env.API_KEY}`;
       const { data } = await newsapi.get(url).then();
       return data;
